@@ -15,14 +15,21 @@ Dentro do terminal do mongoSH vamos usar o camando ``` rs.isMaster().primary ```
 Para verificar se seu conjunto de réplicas está funcionando, você pode tentar parar um dos contêineres com docker stop e tentar ler do seu banco de dados novamente.
 
 ``` use CorporeSystem ```
+
 ``` db.cliente.insertOne({codigo:1, nome: "Ana Maria"});```
+
 ``` db.cliente.insertOne({codigo:2, nome: "Maria Jose"});```
+
 ``` db.cliente.insertOne({codigo:3, nome: "Jose Silva"});```
+
 ``` db.cliente.insertOne({codigo:4, nome: "Luis Souza"});```
+
 ``` db.cliente.insertOne({codigo:5, nome: "Fernanda Silva"});```
 
 
 ``` db.cliente.find() ```
+
+Use cada comando individualmente!!!
 
 O retorno deve ser: 
 
